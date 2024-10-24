@@ -57,7 +57,7 @@ public class CustomList extends ArrayAdapter<City> {
      *for the first phase it will be
      empty * @param city
      */
-    public void add(City city) {
+    public void addCity(City city) {
         cities.add(city);
     }
     private CustomList list;
