@@ -44,7 +44,7 @@ public class CustomListTest {
     public void testDeleteCity() {
         CustomList cityList = new CustomList(null, new ArrayList<>());
         City city = new City("Toronto", "Ontario");
-        cityList.add(city);
+        cityList.addCity(city);
 
 
         cityList.delete(city);
