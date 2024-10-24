@@ -58,9 +58,6 @@ public class CustomList extends ArrayAdapter<City> {
      empty * @param city
      */
     public void add(City city) {
-        if (cities.contains(city)) {
-            throw new IllegalArgumentException("City already exists in the list");
-        }
         cities.add(city);
     }
     private CustomList list;
