@@ -40,6 +40,15 @@ public class CustomListTest {
         City city2 = new City("Vancouver", "British Columbia");
         assertFalse(cityList.hasCity(city2));
     }
+    @Test
+    public void testDeleteCity() {
+        CustomList cityList = new CustomList(null, new ArrayList<>());
+        City city = new City("Toronto", "Ontario");
+        cityList.add(city);
 
+
+        cityList.delete(city);
+        assertFalse(cityList.hasCity(city));
+    }
 
 }
